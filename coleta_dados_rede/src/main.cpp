@@ -7,10 +7,10 @@
 #include "modelo_ia.h" // Certifique-se que este arquivo está na pasta include
 
 // --- CONFIGURAÇÕES DE REDE E ACESSO ---
-const char* ssid = "brisa-1173521"; 
-const char* password = "yypgqnac";
-const char* BOTtoken = "8579086813:AAEqyG7aKjyY8aNv-cWDmhVh_y2OsPMsM_A";
-const char* CHAT_ID = "1460313553";
+const char* ssid = "-----"; 
+const char* password = "-----";
+const char* BOTtoken = "----";
+const char* CHAT_ID = "----";
 const IPAddress remote_ip(192, 168, 0, 1); // IP do seu PC Alvo (Gateway)
 
 WiFiClientSecure client;
@@ -49,7 +49,7 @@ void setup() {
     Serial.println("\n--- MONITOR DE BORDA: FINGERPRINTING ATIVO ---");
     
     // Mensagem Inicial Personalizada
-    String msgBoasVindas = "🛡️ Monitoramento Iniciado.\nPor Luis Henrike and Marcelino Camilo";
+    String msgBoasVindas = "🛡️ Monitoramento Iniciado.\nPor Marcelino Camilo";
     bot.sendMessage(CHAT_ID, msgBoasVindas, "");
 }
 
